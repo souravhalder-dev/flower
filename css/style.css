@@ -61,4 +61,43 @@
   height: 800px;
   margin-left: 97px;
   margin-top: 55px;
+  animation: flower 3s linear infinite;
+  transition: transfrom 5s ease-in;
 }
+/* aniimation */
+@keyframes flower {
+  0% {
+    opacity: 0;
+    /* transform: scale(1.5);
+    transform: translateX(10); */
+  }
+  20% {
+    opacity: 0.2;
+    transform: scale(2.5);
+    transform: translateX(40);
+  }
+  25% {
+    opacity: 0.2;
+    transform: scale(1.5);
+    transform: translatey(65);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.5);
+    transform: translatey(46);
+    transform: rotate(45deg);
+  }
+  75% {
+    opacity: 0.5;
+    transform: scale(1.5);
+    transform: translatey(78);
+    transform: rotate(45deg);
+  }
+  100% {
+    opacity: 1;
+    /* transform: scale(1.5); */
+    transform: translateX(100);
+    transform: rotate(360deg);
+  }
+}
+/* body */
